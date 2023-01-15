@@ -396,7 +396,9 @@ hr{
 /* -------------------------------------------------
 -------------------best properties styles-------------------
 ---------------------------------------------------- */
-
+    .properties-description{
+        padding: 0 20px;
+    }
     .properties{
         flex-direction: column;
         row-gap: 30px;

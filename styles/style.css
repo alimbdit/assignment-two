@@ -234,6 +234,7 @@ nav {
 .facts-toggle-content:hover{
     transform: rotate(360deg) scale(.8);
     border-radius: 50%;
+    background-color: var(--light-pink);
     
 }
 

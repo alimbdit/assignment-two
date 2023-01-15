@@ -20,9 +20,9 @@
 ----------------- common styles-------------------------
 ------------------------------------------------------ */
 .container {
-    /* width: 100%;
-    max-width: 1100px; */
-    padding: 0 150px;
+    width: 100%;
+    max-width: 1100px;
+    /* padding: 0 150px; */
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@
     color: var(--black);
     margin-bottom: 24px;
 }
+
 .title--secondery {
     font-size: 1.25rem;
     font-weight: 600;
@@ -56,14 +57,15 @@
     border: none;
     border-radius: 8px;
 }
-.btn-primary{
+
+.btn-primary {
     font-weight: 600;
     font-size: 1.25rem;
     padding: 15px 20px;
     margin-top: 32px;
 }
 
-.btn-secondery{
+.btn-secondery {
     font-weight: 600;
     font-size: 4rem;
     padding: 30px 25px 20px;
@@ -79,7 +81,7 @@ header {
 }
 
 .header-container {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 nav {
@@ -116,7 +118,7 @@ nav {
     padding: 0 70px;
 }
 
-.banner-cover img{
+.banner-cover img {
     /* object-fit: cover; */
     width: 100%;
     margin-top: 50px;
@@ -126,62 +128,226 @@ nav {
 /* -------------------------------------------------
 -------------------quick list styles-------------------
 ---------------------------------------------------- */
-.quick-list{
+.quick-list {
     margin-top: 80px;
-    
+
 }
 
-.quick-list-details{
+.quick-list-details {
     display: flex;
     padding: 0 40px;
     column-gap: 70px;
     align-items: center;
 }
 
-.quick-list-images{
+.quick-list-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     width: 50%;
 }
-.quick-list-images > img{
+
+.quick-list-images > img {
     width: 100%;
 }
-.quick-list-description{
+
+.quick-list-description {
     width: 50%;
 }
 
 /* -------------------------------------------------
 -------------------features styles-------------------
 ---------------------------------------------------- */
-.features{
+.features {
     margin-top: 130px;
     margin-bottom: 130px;
 }
-.feature-details{
+
+.feature-details {
     display: flex;
     gap: 45px;
     justify-content: space-between;
     align-items: center;
 }
-.feature-description{
+
+.feature-description {
     width: 50%;
 }
-.feature-image img{
+
+.feature-image img {
     width: 100%;
 }
-.feature-title{
+
+.feature-title {
     padding-left: 20px;
     border-left: 5px solid var(--orange);
 }
-.item{
+
+.item {
     margin-top: 20px;
     padding: 30px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
 }
-.big-button{
+
+.big-button {
     /* text-align: center; */
     margin-left: 420px;
     margin-top: -110px;
+}
+
+/* -------------------------------------------------
+-------------------facts styles-------------------
+---------------------------------------------------- */
+.facts{
+    margin-bottom: 150px;
+}
+.facts-description {
+    width: 100%;
+    max-width: 542px;
+}
+
+.facts-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+
+.facts-toggle-content {
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: transform 2s ease-in-out;
+}
+.facts-toggle-content:hover{
+    transform: rotate(360deg);
+}
+
+
+.facts-toggle-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.facts-toggle-info {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+/* -------------------------------------------------
+-------------------sponsor styles-------------------
+---------------------------------------------------- */
+.sponsor{
+    margin-bottom: 120px;
+}
+.sponsor-content{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsor-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(1);
+}
+
+
+/* -------------------------------------------------
+-------------------footer styles-------------------
+---------------------------------------------------- */
+
+.footer-container{
+    border-radius: 8px;
+    background-color: var(--light-pink);
+    margin-bottom: 150px;
+}
+.footer-details{
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+/* -------------------------------------------------
+------------------Mobile device styles-------------------
+---------------------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+
+    .container{
+        padding: 0 30px;
+    }
+    /*-------------------------------------------------
+------------------- header styles-------------------
+-------------------------------------------------- */
+    nav{
+        text-align: center;
+        flex-direction: column;
+    }
+    .menu > ul{
+        flex-direction: column;
+        row-gap: 10px;
+        /* width: 100%; */
+    }
+/* -------------------------------------------------
+-------------------quick list styles-------------------
+---------------------------------------------------- */
+    .quick-list-details {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .quick-list-images{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+        width: 100%;
+    }
+    .quick-list-description {
+        width: 100%;
+    }
+/* -------------------------------------------------
+-------------------features styles-------------------
+---------------------------------------------------- */
+    .feature-details {
+        flex-direction: column;
+        gap: 45px;
+        
+        align-items: center;
+    }
+    .feature-description {
+        width: 100%;
+    }
+    .big-button {
+        text-align: center;
+        margin-top: 35px;
+        margin-left: 0;
+        
+    }
+    /* -------------------------------------------------
+    -------------------facts styles-------------------
+    ---------------------------------------------------- */
+    .facts{
+        text-align: center;
+    }
+    .facts-toggle {
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 50px;
+    }
+    /* -------------------------------------------------
+-------------------sponsor styles-------------------
+---------------------------------------------------- */
+    .footer-container{
+        
+        margin-bottom: 50px;
+    }
+    .sponsor-logo{
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    
 }

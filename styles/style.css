@@ -166,7 +166,7 @@ nav {
 }
 
 .quick-list-description {
-    width: 50%;
+    width: 100%;
 }
 
 /* -------------------------------------------------
@@ -351,6 +351,7 @@ hr{
 -------------------quick list styles-------------------
 ---------------------------------------------------- */
     .quick-list-details {
+        padding: 0 5px;
         flex-direction: column;
         gap: 25px;
     }

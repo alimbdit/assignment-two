@@ -79,6 +79,12 @@
     padding: 15px 20px;
     margin-top: 20px;
     border-radius: 30px;
+    background-color: var(--gray);
+}
+.big-button {
+    /* text-align: center; */
+    margin-left: 420px;
+    margin-top: -110px;
 }
 
 /*-------------------------------------------------
@@ -198,11 +204,7 @@ nav {
     border-radius: 8px;
 }
 
-.big-button {
-    /* text-align: center; */
-    margin-left: 420px;
-    margin-top: -110px;
-}
+
 
 /* -------------------------------------------------
 -------------------facts styles-------------------
